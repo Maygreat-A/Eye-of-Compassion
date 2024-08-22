@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="active.css">
+    <script src="fun.js" defer></script> <!-- Include JavaScript file for login validation -->
+</head>
+<body>
+    <h1>LOG IN</h1>
+    <form id="loginForm">
+        <div class="form-control">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+        </div>
+        <br><br>
+        <div class="form-control">
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+        <br>
+        <a href="#">Forgot Password</a>
+        <br><br>
+        <div class="center">
+            <button type="button" onclick="validateLogin()">DONE</button>
+            <button type="button" onclick="resetForm()">Reset</button> <!-- Call reset function -->
+        </div>
+        <br><br>
+        <a href="home.html">BACK</a>
+    </form>
+</body>
+</html>

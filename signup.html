@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="active.css">
+    <script src="oop.js" defer></script> <!-- Include JavaScript file for form validation -->
+</head>
+<body>
+    <h1>SIGN UP</h1>
+    <form id="signupForm">
+        <div class="form-control">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <span id="usernameError" class="error"></span> <!-- Display error message for username -->
+        </div>
+        <br><br>
+        <div class="form-control">
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <span id="passwordError" class="error"></span> <!-- Display error message for password -->
+        </div>
+        <br>
+        <br>
+        <button type="button" onclick="validateSignUp()">DONE</button> <!-- Call validation function -->
+        <button type="button" onclick="resetForm()">Reset</button> <!-- Call reset function -->
+        <br><br>
+        <a href="home.html">BACK</a>
+    </form>
+</body>
+</html>
